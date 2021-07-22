@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        app:cardElevation="@dimen/cardview_default_elevation"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/newsIV"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp" />
+
+            <ImageView
+                android:id="@+id/shadow_top"
+                android:src="@drawable/bottom_shadow"
+                android:layout_alignBottom="@+id/newsIV"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+
+
+                <TextView
+                    android:id="@+id/titleTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_below="@+id/shadow_top"
+                    android:text="Menko PMK Minta MUI Bantu Soal Pemulasaraan Jenazah"
+                    android:textColor="@color/black" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_alignParentBottom="true">
+
+                    <TextView
+                        android:id="@+id/publisherTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="3dp"
+                        android:layout_below="@+id/titleTV"
+                        android:text="kumparan.com"
+                        tools:ignore="NotSibling" />
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/del"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="3dp"
+                        android:layout_toEndOf="@+id/publisherTV"
+                        android:text="|"/>
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/dateTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="3dp"
+                        android:layout_toEndOf="@+id/del"
+                        android:text="asdfadsf"/>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
